@@ -1,0 +1,40 @@
+/*********************
+CUSTOM VARIABLES
+Use this file to define any variables you'll want to use
+globally as it's included before any Bootstrap modules.
+
+NOTE: Declare variables here to overwrite Bootstrap defaults.
+*********************/
+$font-family-sans-serif: "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+
+
+// Update grid container max-widths
+$container-max-widths: (
+  sm: 540px, //default
+  md: 720px, //default
+  lg: 960px, //default
+  //xl: 1140px //default
+  //xl: 1400px // new
+  xl: 1270px //split-diff
+);
+
+// Primary Colors
+$ex-primary-color:    #2e3b50; // use description if applicable
+$ex-primary-color-2:  #ff6600;
+
+// Secondary Colors
+$ex-second-color: #61AFE7;
+
+// Font Stacks
+$example-font-stack: 'Ubuntu, Helvetica, Aria, sans-serif';
+$font-sans: Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif;
+$font-serif: 'Georgia', serif;
+
+$body-bg: #262E50;
+$body-color: #ffffff;
+
+$brand-blue: #262E50;
+$brand-purple: #2C0141;
+$brand-primary: #B39F6C;
+
+$off-white: #FCF9F0;

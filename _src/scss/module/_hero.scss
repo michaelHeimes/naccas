@@ -1,0 +1,144 @@
+.hero {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	display: flex;
+	align-items: center;
+	
+	>.container {	
+		min-height: calc(100vh - 85px);
+		display: flex;
+		
+		@include media-breakpoint-up(lg) {
+			min-height: calc(100vh - 195px);
+		}
+		
+		@media (min-height:700px) {
+			min-height: 600px;
+		}
+	
+		.row.inner {
+			width: 100%;
+			align-items: center;
+			justify-content: space-between;
+			
+			>.col {
+				height: auto;
+				display: flex;
+			    flex-direction: column;
+			    justify-content: center;
+			    
+			    @include media-breakpoint-up(lg) {
+				    height: 100%;
+			    }
+				
+			.text-wrap {	
+				padding-left: 0;	
+				
+				@include media-breakpoint-up(lg) {
+					padding-left: 88px;	
+				}
+						
+				h1 {
+					font-size: rem-calc(36px);
+					line-height: 1.13;
+					text-shadow: 0px 3px 6px rgba(0,0,0,0.3);
+					
+					@include media-breakpoint-up(lg) {
+						font-size: rem-calc(60px);
+					}
+					
+				}
+				
+				p {
+					font-size: rem-calc(24px);
+					line-height: 1.35;
+					
+					@include media-breakpoint-up(lg) {
+						font-size: rem-calc(30px);
+					}
+					
+				}
+				
+			}
+			
+			&.scroll-links {
+				//padding-top: 3em;
+				padding-top: 1.5em;
+				margin-top: 5em;
+				position: relative;
+				
+				@include media-breakpoint-up(lg) {
+					margin-top: 0;
+				}
+								
+				.inner {
+					padding: 0 4em;
+					max-width: 640px;
+					height: 100%;
+				    display: flex;
+				    flex-direction: column;
+				    justify-content: center;
+					
+					&:before {
+						content: '';
+					    width: 106%;
+					    max-width: 420px;
+					    max-width: 640px;
+					    position: absolute;
+					    z-index: 0;
+					    top: -1em;
+					    right: -3%;
+					    bottom: -8em;
+					    background: transparent linear-gradient(180deg, rgba(44,1,65,.5) 0%, rgba(38,46,80,.5) 100%) 0% 0% no-repeat padding-box;
+					    backdrop-filter: blur(18px);
+					    transform: matrix(0.99, 0.14, -0.14, 0.99, 0, 0);
+					}
+					
+					a {
+						display: flex;
+						flex-wrap: nowrap;
+						margin-bottom: 1.2em;
+						font-size: rem-calc(17px);
+						line-height: 1.333;
+						position: relative;
+						z-index: 1;
+						color: #fff;
+						
+						@include media-breakpoint-up(lg) {
+							font-size: rem-calc(27px);
+						}
+						
+						.left {
+							min-width: 55px;
+							
+							@include media-breakpoint-up(lg) {
+								min-width: 75px;
+							}
+							
+							img {
+								transform: scale(0.65);
+								
+								@include media-breakpoint-up(lg) {
+									transform: scale(0.8);
+								}
+								
+							}
+							
+						}
+						
+					}
+				
+				}
+				
+			}
+			
+			}
+		
+		}
+	
+	}
+	
+}

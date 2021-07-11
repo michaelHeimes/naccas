@@ -1,0 +1,53 @@
+.index-wrap {
+	
+	.hero {
+		h1 {
+			padding-left: 1.05em;
+			font-size: rem-calc(80px);
+			line-height: 1.13;
+			text-shadow: 0px 3px 6px #000000;
+		}
+	}
+	
+	.alm-wrap {
+		padding-top: 7.5em;
+		padding-bottom: 6em;
+	
+		article {
+			
+			.inner {
+				justify-content: space-between;
+			
+				.left {
+					
+					a {
+						color: #fff;
+					}
+					
+					img {
+						max-width: 389px;
+					}
+					
+					h2 {
+						font-family: $font-sans;
+						font-size: rem-calc(33px);
+						line-height: 1.54;
+					}
+					
+					
+				}
+				
+				.right {
+					padding-top: 1em;
+					flex: 1 1 210px;
+					text-align: right;
+					padding-right: .5em;
+				}
+			
+			}
+			
+		}
+	
+	}
+	
+}

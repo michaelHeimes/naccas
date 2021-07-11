@@ -1,0 +1,48 @@
+.getting-started {
+	
+	.left {
+		.inner {
+			padding: 1.3em;
+			background: transparent linear-gradient(180deg, $brand-primary 0%, $brand-blue 100%) 0% 0% no-repeat padding-box;
+			background: transparent linear-gradient(180deg, #B39F6C 0%, #2C0141 100%) 0% 0% no-repeat padding-box;
+			background: transparent linear-gradient(180deg, #B39F6C 0%, #2C014100 100%) 0% 0% no-repeat padding-box;
+			
+			@include media-breakpoint-up(md) {
+				padding: 4em 3.9em;
+			}
+			
+			h2 {
+				margin-bottom: 0;
+				padding-bottom: 0.25em;
+			}
+			
+		}
+	}
+	
+	.right {
+		padding-bottom: 5.05em;
+		
+		.inner {
+			padding: 1.3em;
+			background: transparent linear-gradient(180deg, #FFFFFF 0%, #1D3640 100%) 0% 0% no-repeat padding-box;
+			
+			@include media-breakpoint-up(md) {
+				padding: 2.7em 2.6em;
+			}
+			
+			img {
+				max-width: 30px;
+			}
+			
+			h2 {
+				color: $brand-blue;
+			}
+			
+			.btn-wrap {
+				padding-top: 2em;
+			}
+			
+		}
+	}
+	
+}

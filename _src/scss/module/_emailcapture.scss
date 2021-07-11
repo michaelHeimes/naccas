@@ -1,0 +1,95 @@
+.email-capture {
+	
+	.gform_confirmation_wrapper {
+		font-size: rem-calc(22px);
+	}
+
+	.inner {
+		
+		.content-wrap {
+			padding-top: 4em;
+			padding-bottom: 4em;
+			background: transparent linear-gradient(180deg,$brand-purple, $brand-blue) 0 0 no-repeat padding-box;
+			
+			.inner {
+			max-width: 1088px;
+			margin: auto;
+		
+				h2 {
+					display: inline-block;
+					position: relative;
+					padding-bottom: 0.5em;
+					margin-bottom: 0.6em;
+					
+					&:after {
+						content: '';
+						position: absolute;
+						bottom: 0;
+						left: 10%;
+						width: 80%;
+						height: 3px;
+						background: #fff;
+					}
+					
+				}
+				
+				.gform_wrapper {
+					
+					ul.gform_fields {
+						display: flex;
+						justify-content: center;
+						flex-wrap: wrap;
+						
+						@include media-breakpoint-up(md) {
+							justify-content: space-between;
+							flex-wrap: nowrap;
+						}
+
+					
+						li {
+							margin-top: 0;
+							padding: 0;
+							max-width: 470px;
+							flex: 1 1 100%;
+
+							@include media-breakpoint-up(md) {
+								margin-top: 16px;
+								flex: 0 1 45%;
+							}
+						}
+						
+					}
+					
+					.gform_footer {
+						
+						.gform_button.button {
+							
+							&:before,
+							&:after {
+								border-color: #fff;
+							}
+						
+							&:hover {
+									
+								border-color: #fff;
+									
+								&:before,
+								&:after {
+									transform: translateX(0px);
+								}
+							 
+							}
+							
+						}
+						
+					}
+										
+				}
+				
+			}
+		
+		}
+		
+	}
+	
+}

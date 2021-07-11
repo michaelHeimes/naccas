@@ -1,0 +1,168 @@
+.single-news,
+.page-template-page-template-page-builder {
+	
+	#main {
+		margin-bottom: 5.75em;
+	}
+	
+	article {
+		
+		> .inner {
+			margin-top: -42px;
+			padding-top: 2.5em;
+			padding-bottom: 6.2em;
+			background-color: $off-white;
+			color: #000;
+			
+			> section {
+				margin-top: 0;
+				margin-bottom: 0;
+				padding-top: 45px;
+				padding-bottom: 45px;
+				
+			&:first-child {
+				padding-top: 20px;
+			}
+				
+				> .container {
+					padding-left: 5em;
+					padding-right: 5em;
+					
+					@include media-breakpoint-up(xl) {
+						padding-left: 8.8em;
+						padding-right: 8.8em;						
+					}
+					
+				}
+				
+			}
+			
+			.content-header {
+				padding-bottom: 0;
+				
+				.row {
+					justify-content: space-between;
+					
+					h2 {
+						padding-bottom: .4em;
+					}
+				
+					ul.social-share {
+						padding-bottom: 1.4em;
+						
+						@include media-breakpoint-up(xl) {
+							justify-content: flex-end;
+						}
+						
+						li {
+							
+							&:first-child {
+								color: $brand-blue;
+							}
+							
+							&:not(:first-child) {
+								a {
+									background-color: $brand-blue;
+									color: $off-white;
+								}
+							}
+							
+							&:last-child {
+								margin-right: 0;
+							}
+							
+						}
+						
+					}
+					
+					.date-wrap {
+						font-size: rem-calc(19.5px);
+						line-height: 1.34;
+						font-weight: bold;
+					}
+				
+				}
+								
+			}
+			
+			.text-editor {
+				
+				h3 {
+					font-size: rem-calc(30px);
+					line-height: 1.325;
+				}
+				
+			}
+			
+			.staggered-images {
+				
+				.row {
+					margin-left: -7px;
+					margin-right: -7px;
+				
+					>div {
+						padding-left: 7px;
+						padding-right: 7px;
+					}
+				
+				}
+				
+				&.two {
+					.left {
+						padding-top: 50px;
+					}
+					
+					.right {
+						
+					}
+					
+				}
+				
+				&.three {
+					.left {
+						padding-top: 100px;
+					}
+					
+					.middle {
+						padding-top: 50px;
+					}
+					
+					.right {
+						
+					}
+					
+				}
+				
+			}
+			
+			.news-quote {
+				
+				.inner {
+					margin: auto;
+					
+					.mark-wrap {
+						height: 108px;
+						position: relative;
+						span.quote-mark {
+							position: absolute;
+							bottom: 0;
+							display: inline-block;
+							font-size: rem-calc(114px);
+							line-height: 0;
+						}
+					}
+					
+					.text-wrap {
+						padding-left: 60px;
+						padding-right: 60px;
+					}
+				
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+}

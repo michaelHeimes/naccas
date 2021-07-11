@@ -1,0 +1,73 @@
+section.school-directory {
+	
+	.inner {
+		padding-top: 7em;
+		padding-bottom: 20em;
+		background: transparent linear-gradient(180deg, #FFFFFF80 0%, #262E50 100%) 0% 0% no-repeat padding-box;
+	}
+	
+	h2 {
+		padding-bottom: 1.25em;
+	}
+	
+	form {
+		max-width: 1066px;
+		margin: auto;
+		display: flex;
+		
+		>.row {
+			margin: auto;
+		
+			.col {
+				display: flex;
+				margin-bottom: 23px;
+				
+			@include media-breakpoint-up(md) {
+				&:nth-child(1),
+				&:nth-child(3) {
+					padding-right: 8px;
+				}
+				
+				&:nth-child(2),
+				&:nth-child(4) {
+					padding-left: 8px;
+				}
+				
+			}
+			
+				input:not([type="submit"]),
+				select {
+					flex: 1 1 100%;
+					min-height: 55px;
+					border: 0;
+					border-radius: 0;
+					padding: 0 22px;
+				}
+				
+				input:not([type="submit"])::placeholder,
+				select {
+					font-size: rem-calc(14);
+		            line-height: 1.21;
+		            color: rgba(38,46,80,.5);
+				}
+							
+			}
+			
+			.sumbit-wrap {
+				padding-top: 4px;
+				input {
+					margin: auto;
+					background: transparent;
+					border: 2px solid #fff;
+					font-size: rem-calc(17px);
+					border-radius: 0;
+					color: #fff;
+					padding: 0.3em 1.4em;
+				}
+			}
+		
+		}
+		
+	}
+	
+}

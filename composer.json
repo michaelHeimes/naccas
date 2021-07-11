@@ -1,0 +1,15 @@
+{
+    "name": "lightningfruit/aucoyote",
+    "description": "Custom WordPress base theme for development at Lightning Fruit, LC.",
+    "type": "project",
+    "require": {
+        "tgmpa/tgm-plugin-activation": "^2.6",
+        "wp-bootstrap/wp-bootstrap-navwalker": "^4.2"
+    },
+    "authors": [
+        {
+            "name": "MJ Watkins",
+            "email": "mj@lightningfruit.com"
+        }
+    ]
+}

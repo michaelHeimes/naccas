@@ -1,0 +1,99 @@
+.events-calendar {
+	position: relative;
+	
+	.event-month-slider {
+		position: relative;
+		padding-bottom: 102px;
+		
+		.btn-wrap {
+			position: absolute;
+			bottom: 0;
+			width: auto;
+			min-width: 0;
+			
+			&.prev{
+				left: 0;
+			}	
+			
+			&.next {
+				right: 0;
+			}		
+	
+			.slick-arrow {
+				position: relative;
+				top: auto;
+				left: auto;
+				right: auto;
+				bottom: auto;
+				transform: translate(0, 0);
+				color: #fff;
+				width: auto;
+				height: auto;
+				
+				&.slick-prev {
+					left: 2px;
+				}
+	
+				&.slick-next {
+					right: 2px;
+				}				
+				
+			}
+		}
+		
+		.slick-slide.single-month {
+			display: flex !important;
+			
+			.utility .inner {
+				//min-height: 523px;
+				min-height: 425px;
+				padding-bottom: 245px;
+			}
+			
+			.grid-wrap {
+				margin-top: -200px;
+				padding: 0 2em;
+			}
+			
+		}
+	}
+	
+	.event-cal-nav {
+		position: relative;
+			.btn-wrap {
+				position: absolute;
+				bottom: 0;
+				width: auto;
+				min-width: 0;
+				
+				&.prev{
+					left: 0;
+				}	
+				
+				&.next {
+					right: 0;
+				}		
+	
+				.slick-arrow {
+					position: relative;
+					top: auto;
+					left: auto;
+					right: auto;
+					bottom: auto;
+					transform: translate(0, 0);
+					color: #fff;
+					width: auto;
+					height: auto;
+					
+					&.slick-prev {
+						left: 2px;
+					}
+	
+					&.slick-next {
+						right: 2px;
+					}				
+					
+				}
+			}
+	}
+}

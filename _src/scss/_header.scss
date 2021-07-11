@@ -1,0 +1,164 @@
+#site-header {
+  background: $brand-blue;
+  background: transparent linear-gradient(95deg, #000000 0%, #000000 0%, #262E50 67%, #262E50 100%) 0% 0% no-repeat padding-box;
+  position: fixed;
+  z-index: 9;
+  left: 0;
+  right: 0;
+
+  .logo-wrap {
+    padding-left: 0;
+
+    #logo, #mobile-logo {
+      img {
+        max-width: 85px;
+
+        @include media-breakpoint-up(lg) {
+          max-width: 115px;
+        }
+      }
+    }
+
+  }
+
+  .top {
+    //padding-top: 1em;
+    padding-top: 0.5rem;
+    padding-right: 1.5rem;
+
+    form#searchform {
+      display: inline-flex;
+      margin-right: 4.65em;
+
+      input {
+
+        &#s {
+          border-style: solid;
+          border-width: 1px 0 1px 1px;
+          border-color: #707070;
+          border-radius: 0;
+          padding: 0.344em;
+          background-clip: border-box;
+
+          &::placeholder {
+            font-size: rem-calc(14);
+            line-height: 1.21;
+            color: $brand-blue;
+            opacity: 0.50;
+            text-align: right;
+          }
+
+        }
+
+        &[type="image"] {
+          background: #fff;
+          border-style: solid;
+          border-width: 1px 1px 1px 0;
+          border-color: #707070;
+          border-radius: 0;
+          padding: 0.344em;
+        }
+
+      }
+
+    }
+
+    a {
+      font-weight: bold;
+      font-size: rem-calc(16px);
+      line-height: 1.2;
+      color: $brand-primary;
+    }
+
+  }
+
+}
+
+.navbar-brand {
+  padding: 0;
+}
+
+.desktop-nav-wrap .navbar {
+  padding-bottom: 0.25rem;
+}
+
+#site-primary-nav, #site-primary-nav-mobile {
+  li {
+
+    text-align: center;
+
+    a {
+      color: #fff;
+      font-weight: bold;
+      font-size: rem-calc(16px);
+      line-height: 1.2;
+
+      &:hover {
+        color: #E9C454;
+      }
+    }
+  }
+}
+
+#site-primary-nav {
+
+  ul {
+    width: 100%;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    li {
+      max-width: 120px;
+    }
+  }
+}
+
+.mobile-nav-wrap {
+  height: 85px;
+  align-items: center;
+
+  > .col {
+    position: static;
+
+    #logo, #mobile-logo {
+      padding: 0;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    .navbar-mobile {
+      padding: 0;
+      position: static;
+
+      .inner {
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      #site-primary-nav-mobile {
+        position: absolute;
+        background-color: rgb(40, 40, 77);
+        width: 100vw;
+        top: 85px;
+        left: 0;
+        z-index: 9999;
+        //@include media-breakpoint-up(md) {
+        //  display: none !important;
+        //}
+
+        ul.navbar-nav {
+          padding: 1.5em;
+
+          li {
+
+          }
+        }
+
+      }
+
+    }
+
+  }
+
+}

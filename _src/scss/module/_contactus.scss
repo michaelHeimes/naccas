@@ -1,0 +1,95 @@
+.contact-us {
+	padding-top: 5.375em;
+	padding-bottom: 5.375em;
+	background: transparent linear-gradient(180deg, rgba(255,255,255,.62) 0%, rgba(38,46,80,.62) 100%) 0% 0% no-repeat padding-box;
+	
+	.container {
+		padding: 0;
+		
+		h2 {
+			display: inline-block;
+			border-bottom: 3px solid #fff;
+			padding: 0 2.15em .44em;
+		}
+		
+		.staff-card {
+			margin-bottom: 2em;
+			
+			@include media-breakpoint-up(md) {
+				margin-bottom: 3.4em;
+			}
+			
+			h3 {
+				font-size: rem-calc(30px);
+				font-weight: 400;
+				line-height: 1.325;
+				padding-bottom: 0.5em;
+			}
+			
+			.fh {
+						
+				.inner {
+					padding: 2em 2.4em;
+					height: 100%;
+					background-color: $off-white;
+					color: #000;
+					
+					.left {
+					
+						ul {
+							list-style: none;
+							margin: 0;
+							padding: 0;
+							
+							li {
+								text-align: left;
+								font-weight: bold;
+								font-size: rem-calc(16px);
+								position: relative;
+								padding-left: 0.87em;
+								padding-bottom: 0.4em;
+								
+								&:before {
+									content: '';
+									top: 0.75em;
+									left: 0;
+									position: absolute;
+									width: 6px;
+									height: 6px;
+									background: #000;
+									border-radius: 100%;
+								}
+								
+							}
+							
+						}
+					
+					}
+					
+					.right {
+						
+						a {
+							display: inline-block;
+							font-size: rem-calc(16px);
+							font-weight: 400;
+							color: #000;
+							text-decoration: underline;
+							margin-bottom: 0.4em;
+						}
+						
+						>div {
+							font-size: rem-calc(16px);
+							font-weight: 400;
+						}
+						
+					}
+					
+				}
+			
+			}
+			
+		}
+	
+	}
+	
+}
